@@ -22,8 +22,8 @@ router.get("/:email",(req,res)=>{
   // Update the code here
   const email = req.params.email;
   res.send(friends[email]);
-  foundfriend = friends.filter(friend => friend.email === email);
-  res.send(JSON.stringify(foundUser, null, 4))//This line is to be replaced with actual return value
+  //foundfriend = friends.filter(friend => friend.email === email);
+  //res.send(JSON.stringify(foundUser, null, 4))//This line is to be replaced with actual return value
 });
 
 
